@@ -3,8 +3,7 @@ import Button from "./UI/Button.tsx";
 
 export default function Header() {
   const timerContext = userTimerContext();
-  console.log(timerContext.isRunning);
-  console.log(timerContext.timers);
+
   return (
     <header>
       <h1>ReactTimer</h1>

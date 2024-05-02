@@ -6,7 +6,7 @@ import {
   useReducer,
 } from "react";
 
-interface Timer {
+export interface Timer {
   name: string;
   duration: string;
 }

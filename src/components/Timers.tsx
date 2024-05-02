@@ -5,8 +5,8 @@ export default function Timers() {
   const { timers } = userTimerContext();
   return (
     <ul>
-      {timers.map((item) => (
-        <Timer name={item.name} duration={item.duration} />
+      {timers.map((item, index) => (
+        <Timer key={index} name={item.name} duration={item.duration} />
       ))}
     </ul>
   );
