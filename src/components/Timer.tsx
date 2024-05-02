@@ -4,7 +4,6 @@ import { userTimerContext } from "../store/timerContext.tsx";
 import { Timer as Timerprops } from "../store/timerContext.tsx";
 export default function Timer({ name, duration }: Timerprops) {
   const interval = useRef<number | null>(null);
-  console.log(interval);
   const [remainingTime, setRemainingTime] = useState(+duration * 1000);
   const { isRunning } = userTimerContext();
 
